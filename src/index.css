@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .carousel-item {
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(-100%);
+}
+
+.carousel-item.active {
+  transform: translateY(0%);
+} */
+/* .carousel-item-next {
+  transform: translateY(100%);
+}
+.carousel-item-prev {
+  transform: translateY(-100%);
+}
+.active.carousel-item-start,
+.carousel-item-prev:not(.carousel-item-end) {
+  transform: translateY(100%);
+} */
+/* .carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateY(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateY(-100%);
+} */
+

@@ -1,0 +1,90 @@
+.mainCarouselDiv {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  .carousel-indicator-div {
+    position: fixed;
+    top: 10%;
+    left: 37%;
+  }
+  .carouselBody {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // position: absolute;
+    scroll-snap-align: start;
+    // transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+    .content-banner {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      z-index: 1000;
+      opacity: 0;
+    }
+    .leftPart {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50vw;
+      justify-content: flex-end;
+      background: #6411a9;
+      gap: 2vw;
+      padding: 1.5vw 3vw;
+      & > h1 {
+        text-transform: uppercase;
+        color: white;
+      }
+      & > img {
+        width: 60%;
+      }
+      & > p {
+        color: white;
+      }
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        & > a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+        }
+        & > a:nth-child(1) {
+          text-transform: capitalize;
+        }
+        & > a:nth-child(2) {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .rightPart {
+      width: 50vw;
+      background: #cdcbcf;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      & > img {
+        width: 25vmin;
+      }
+    }
+  }
+
+  .carouselBody {
+    .content-banner:first {
+      opacity: 1;
+    }
+    .leftPart:first {
+      opacity: 1;
+    }
+  }
+}
